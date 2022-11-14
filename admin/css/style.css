@@ -1,0 +1,120 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    position:relative;
+    min-height:100vh;
+    font-size: 1.5rem;
+    font-family: Tahoma, Roboto, sans-serif;
+    background-color: #e2e1e1;
+}
+
+/* INIT */
+header{
+    background-color: cadetblue;
+    color: #ffff;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size:2em;
+}
+
+h1+a{
+    font-size:1.2em;
+}
+
+h2{
+    color:cadetblue;
+    margin:2rem 0;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+/* / INIT */
+
+main p.add{
+    margin-bottom: 2rem;
+}
+
+main p.add a{
+    color:#fff;
+    background-color:cadetblue;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+
+}
+
+main table{
+    width:100%;
+    border-collapse: collapse;
+}
+main table thead{
+    color:#fff;
+    background-color:cadetblue;
+}
+
+main table tbody tr:nth-child(even){
+    background-color:#5f9ea042;
+
+}
+
+main table td{
+    padding:2rem;
+    text-align: center;
+}
+
+form{
+    background-color:#d9d6d6;
+    padding:4rem;
+    margin:auto;
+}
+
+form input, form label, form textarea, form select{
+    display:block;
+    width:100%;
+    margin-bottom:1rem;
+}
+
+form input,form textarea, form select{
+    padding:0.5rem
+}
+
+form label{
+    color:cadetblue;
+    font-weight: 700;
+}
+
+.error, .success{
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+.error{
+    background-color: #f3b6b6;
+}
+.success{
+    background-color:#b1d7b1;
+}
+

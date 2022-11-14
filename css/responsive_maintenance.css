@@ -1,0 +1,22 @@
+@media only screen and (max-width: 640px) {
+/* smartphone */
+    #contenu{
+        background-image: none; 
+        height: 0; width: 100%; 
+        display: block;}
+}
+
+
+
+@media only screen and (max-width: 360px) and (orientation: portrait){
+    p{
+        margin: 10px;
+        font-size: 30px;}
+    #contenu{
+        margin-top: 3em;}
+    #decompte{
+        color: #856666a8;
+        font-style: 600;}
+}
+
+

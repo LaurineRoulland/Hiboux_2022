@@ -1,0 +1,818 @@
+
+@font-face {
+  font-family: "mongolian-baiti-regular";
+  src: url("../includes/monbaiti.ttf");}
+@font-face {
+  font-family: "Gabriola";
+  src: url("../includes/Gabriola.ttf");}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+/*  font-family: 'Montserrat', sans-serif;  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+/*  font-family: 'Raleway', sans-serif;  */
+
+
+*{
+	box-sizing:border-box;
+	/*margin:0;*/
+	/*padding:0*/}
+
+body, header{
+	width: 100%;
+	/* max-width: 1700px; */
+	padding: 0;
+	margin: auto;
+	background-color: #fff;
+	font-family: 'Gabriola', sans-serif;
+	color: #856666;}
+
+p{
+	font-size: 1.5em;
+	line-height: 1.3;}
+
+h1, h2, h3{
+	font-family: "mongolian-baiti-regular", sans-serif;}
+
+.show{
+	display:flex;
+	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+ 	overflow: hidden;}
+
+
+
+/*  NAV  */
+
+#mySidenav{
+	display: none;}
+
+.sidenav {
+  height: auto;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #856666;
+  padding-top: 60px;
+  padding-bottom: 2em;
+  transition: left 0.9s ease;}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;}
+
+.sidenav ul li{
+	text-align: center;
+	margin: 0;
+	padding: 0;}
+
+.sidenav a {
+  font-size: 25px;
+  color: #e1d5d5;
+  display: block;
+  transition: 0.3s;}
+
+.sidenav.active {
+  left: 0;}
+
+.sidenav .close {
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;}
+
+.logo_programme{
+	width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: flex-start;}
+
+#logo{
+	width: 30%;
+	min-width: 200px;
+	max-width: 300px;
+	margin: 1.5em auto;}
+
+nav ul{
+	padding: 0;
+	margin: 0;
+	display: inline-flex;
+	list-style: none;
+	justify-content: center;}
+
+nav{
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;}
+
+nav a.header_menu{
+	display:none;}
+
+ul li{
+	padding: 1em;
+	font-size: 1.6em;}
+
+ul li a{
+	text-decoration: none; color: #856666;}
+ul li a:link{
+	color: #e1d5d5;}
+ul li a:hover{
+	color: whitesmoke;}
+ul li a:after{
+  display: block;
+  content: '';
+  border-bottom: solid 2px whitesmoke;
+  transform: scaleX(0);
+  transition: transform 300ms ease-out;}
+ul li a:hover:after{
+	transform: scaleX(0.8);}
+
+
+
+
+/*  BANIERE */
+
+#baniere {
+	text-align: center;}
+
+#baniere img{
+	width: 85%;
+	margin: auto;}
+
+
+
+/*  ASIDE  */
+
+.home aside{
+	width: 100%;
+	height: auto;
+	background-color: rgba(133, 102, 102, 0.1);
+	text-align: center;
+	padding: 0;
+	margin: auto;}
+
+/*  Date  */
+h2{
+	font-family: 'mongolian-baiti-regular', sans-serif;
+	font-size: 220%;
+	letter-spacing: 0.5em;
+	font-variant: small-caps;
+	font-weight: 200;
+	margin: 0.5em 0 0 0;}
+
+#date{
+	width: 100%;
+	margin: 1em 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;}
+
+/*  Compte à rebour  */
+#decompte_rebour{
+	font-style: italic;
+	font-size: 75%;
+  color: #856666;
+  flex-direction: column;}
+
+#decompte{
+	font-style: normal;
+	font-family: 'mongolian-baiti-regular', sans-serif;}
+
+
+
+/*  LOGO et PROGRAMME */
+.logo_programme{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	justify-content: center;}
+
+#programme{
+	width: 75%;
+	margin-bottom: 1em;
+	max-width: 900px;}
+
+
+
+
+/*  SECTION BLOG  */
+
+section{
+	width: 60%;
+	margin: auto;}
+
+#blog{
+	width: 100%;
+	height: auto;
+	background-color: rgba(133, 102, 102, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: -1.5em;
+	padding: 1%;}
+
+#blog h2{
+	font-family: 'mongolian-baiti-regular', sans-serif;
+	font-size: 220%;
+	letter-spacing: 0.5em;
+	font-variant: small-caps;
+	font-weight: 200;
+	margin: 0.5em 0 0 0;}
+
+#blog h2, #blog p{
+	text-align: center;
+	margin: 0 auto;}
+
+#blog p{
+	letter-spacing: 0.1em;}
+
+.img_card{
+	width: 100%;}
+
+.card{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 1.5em auto;}
+
+.card_article{
+	width: 33%;
+	display: flex;
+	flex-direction: column;
+	margin: 0.3em 0;}
+
+.card_article{
+	text-align: center;}
+
+.card_article h4{
+	font-family: 'Gabriola', sans-serif;
+	font-variant: small-caps;
+	font-weight: 100;
+	font-size: 170%;
+	margin: 0.3em 0;}
+
+.card_article p{
+	line-height: 1.2;
+	font-size: 85%;
+	margin: 0 0 1.8em 0;
+	font-family: 'Raleway', sans-serif;
+	color: rgba(133, 102, 102, 0.4);}
+
+.card_article a{
+	text-decoration-line: none;
+	font-size: 100%;
+	font-weight: 500;
+	color: #856666;}
+
+.card_article a:after{
+	display: block;
+    content: '';
+    border-bottom: solid 2px #856666;
+    transform: scaleX(-0.12);
+    transition: transform 500ms ease-out;}
+
+.card_article a:hover:after {transform: scaleX(-0.27);}
+
+
+
+
+/*  NEWSLETTER  */
+
+#newsletter{
+	width: 100%;
+	height: auto;
+	padding: 1em 0;
+	background-color: rgba(133, 102, 102, 0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;}
+
+#newsletter p{
+	width: 40%;
+	margin: auto;
+	text-align: center;
+	line-height: 1;}
+
+#newsletter a{
+	width: 10em;
+	color: #e5d0d0;
+	background-color: #856666;
+	text-align: center;
+	font-size: larger;
+	text-decoration: none;
+	margin: auto;}
+
+#newsletter a:after{
+	display: block;
+  content: '';
+  border-bottom: solid 2px #e5d0d0;
+  transform: scaleX(0);
+  transition: transform 200ms ease-out;}
+
+#newsletter a:hover:after {transform: scaleX(1);}
+
+
+
+
+/* PAGE ARTICLE  */
+
+main.article{
+	width: 70%;
+	margin: auto;}
+
+.article article img{
+	width: 100%;
+	margin: auto;
+	border: 1px solid #856666;}
+
+.article article{
+	width: 50%;
+	margin: 2em auto;}
+
+
+.article h1{
+	font-variant: small-caps;
+	font-size: 2em;}
+
+.article h2{
+	font-size: 1.5em;
+	padding-bottom: 0;}
+
+
+
+
+/* PAGE CONTACT */
+
+main.contacts{
+	width: 70%;
+	margin: auto;}
+
+.contacts strong{
+	font-size: xx-large;}
+
+.contacts span{
+	font-size: x-large;}
+
+/*  LES MARIES  */
+#les_maries{
+	text-align: center;
+	margin: 3em auto;}
+#les_maries img{
+	width: 30%;
+	min-width: 250px;
+	border: 5px solid #856666;
+	border-radius: 50%;}
+#les_maries figcaption{
+	margin-top: 1em;
+	line-height: 1.2;}
+
+/*  LES TEMOINS  */
+#les_temoins{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;}
+.temoins{
+	text-align: center;}
+.temoins img{
+	width: 100%;
+	min-width: 150px;
+	border: 3px solid #856666;
+	border-radius: 50%;}
+.temoins figcaption{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	line-height: 1;
+	margin-top: 0.8em;}
+
+/*  LES DEMOISELLES & GARCON D'HONNEUR  */
+#les_demoiselles_gars{
+	width: 75%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;}
+.demoiselles_gars{
+	text-align: center;}
+.demoiselles_gars img{
+	width: 92%;
+  min-width: 150px;
+	border: 3px solid #856666;
+	border-radius: 50%;}
+.demoiselles_gars figcaption{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	line-height: 1;
+	margin-top: 0.8em;}
+#Laura{
+	transform: rotate(17deg);}
+
+/*  FORMULAIRE CONTACT  */
+#Contacts{
+	width: 80%;
+	height: auto;
+	margin: 2em auto;
+	padding: 1.5em;
+	background-color: rgba(133, 102, 102, 0.3);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;}
+#text_contact{
+	width: 50%;
+  text-align: center;
+  display: flex;
+  justify-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+	padding-right: 2%;}
+form{
+	width: 50%;
+	margin: 0;
+	padding-left: 1.5em;
+	color: whitesmoke;
+	background-color: rgba(133, 102, 102, 0.6);}
+#message{
+	width: 95%;}
+
+
+
+
+/* GALLERIE */
+
+main.gallerie{
+	width: 30%;
+	margin: auto;}
+
+.gallerie article{
+	text-align: center;
+	margin: 4.5em 0;}
+
+
+
+
+
+/* PAGE INFOS */
+
+.infos #titre{
+	width: 100%;
+	height: 7em;
+	background-color: rgba(133, 102, 102, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1em;}
+
+.infos h2{
+	width: 90%;
+	text-align: center;
+	font-family: 'mongolian-baiti-regular', sans-serif;
+	font-size: 220%;
+	letter-spacing: 0.5em;
+	font-variant: small-caps;
+	font-weight: 200;
+	margin: 0;}
+
+.infos #titre p{
+	margin: 0;
+	font-family: 'gabriola', sans-serif;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;}
+
+.infos section{
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;}
+
+.infos h3{
+	padding: 0 1em;
+	font-variant: small-caps;
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: underline;}
+
+.infos article p{
+	font-family: 'Gabriola', sans-serif;
+	font-size: 1.25em;
+	padding: 0 2em;}
+
+.infos #bloc_horaires, #bloc_adresses{
+	background-color: rgba(133, 102, 102, 0.2);
+	width: 49%;
+	height: auto;}
+
+/* Programme et horaires  */
+.infos .programme{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;}
+
+.infos .programme p {
+	padding: 0;
+	margin-right: 3em;}
+
+.infos .programme img{
+	width: auto;
+	height: auto;
+	margin: 1em 1em 1em 3em;}
+
+.infos .programme span{
+	font-family: 'Raleway', sans
+	-serif;
+	line-height: 1.5;
+	font-weight: 600;}
+
+/* Adresses mairie et domaine */
+.infos aside{
+	text-align: center;}
+
+.infos .acces,.infos .acces li{
+	font-size: 0.8em;
+	font-family: 'Raleway', sans-serif;
+	line-height: 1;}
+
+.infos .acces li{
+	padding: 0.5em;
+	margin: 0;}
+
+.infos iframe{
+	width: 80%;
+	height: auto;}
+
+.infos span{
+	text-decoration: underline;}
+
+.infos .acces{
+	font-style: initial;
+	text-align: left;
+	margin-right: 10%;}
+
+/* Hôtels */
+.infos #bloc_hotel{
+	background-color: rgba(133, 102, 102, 0.2);
+	width: 80%;
+	height: auto;
+	margin: auto;
+	margin-bottom: 1em;}
+
+.infos #centre{
+	text-align: center;}
+
+.infos #bloc_hotel h3{
+	padding: 1em 1em 0 1em;}
+
+.infos #colonnes{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: auto;}
+
+.infos #bloc_hotel ul{
+	margin: 1em;
+	display: flex;
+	flex-direction: column;}
+
+.infos #bloc_hotel li{
+	padding: 0.2em;
+	margin: 0.2em;}
+
+.infos #bloc_hotel ol img{
+	margin: 0 0.6em;}
+
+.infos #bloc_hotel ol{
+	font-family: 'Raleway', sans-serif;
+	font-size: small;
+	margin: 0.8em 0;
+	padding-left: 0.5em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;}
+
+.infos #bloc_hotel iframe{
+	width: 100%;
+	padding: 0;
+	margin: 0;}
+
+
+
+
+
+
+/*  FOOTER  */
+
+footer{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: #856666;
+	height: 5em;}
+
+footer p{
+	color: e5d0d0;
+	margin: 0;
+	display: flex;
+	align-items: center;}
+
+
+
+
+
+
+/*  RESPONSIVE   */
+
+@media screen and (max-width: 1408px){
+	#blog{
+		width: 100%;}
+	.card_article h4{
+		line-height: 0.9;}
+}
+
+@media screen and (max-width: 1350px){
+
+}
+
+@media screen and (max-width: 1080px){
+	.logo_programme {
+    width: 100%;}
+  .home section{
+  	width: 80%;}
+  main.gallerie {
+  	width: 55%;
+  	margin-bottom: 7em;}
+  .blog section{
+  	width: 80%;}
+}
+
+@media screen and (max-width: 950px){
+	.infos section{
+		flex-direction: column;}
+	.infos article{
+		min-width: 95%;
+		margin: 1em auto;}
+	.infos .programme{
+		margin-left: 15%;}
+	.infos #bloc_hotel{
+		min-width: 50%;}
+	#baniere img{
+		width: 95%;}
+}
+
+@media screen and (max-width: 900px){
+	.temoins {
+    margin: 2%;}
+  .demoiselles_gars {
+    margin: 0.5em}
+
+}
+
+@media screen and (max-width: 850px){
+	.infos #colonnes {
+    display: flex;
+    flex-direction: column;}
+  #Contacts {
+    width: 100%;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;}
+  #text_contact {
+    width: 90%;
+    justify-content: center;
+    align-items: center;}
+  form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  	padding: 0;}
+}
+
+@media screen and (max-width: 750px){
+	.blog section{
+		width: 95%;}
+}
+
+@media screen and (min-width: 700px){
+	#openBtn{
+		display: none;}
+}
+
+@media screen and (max-width: 700px){
+	#mySidenav{
+		display: flex;}
+	.infos .programme{
+  	margin: 0;}
+	nav{
+		display: none;}
+	nav ul{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-content: center;
+		justify-content: center;
+		align-items: center;}
+	nav ul li{
+		padding:0;}
+	header > a{
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		align-content: center;
+		justify-content: center;}
+	#programme{
+		width: 100%;}
+	.blog .card{
+		flex-direction:  column;}
+	.card_article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;}
+  #les_temoins{
+  	flex-wrap: wrap;}
+  .temoins img{
+  	width: 150px;}
+}
+
+@media screen and (max-width: 660px){
+	#blog{
+		padding: 1%;}
+	.card_article h4{
+		line-height: 0.8;}
+	.home section {
+    width: 97%;
+    margin: auto;}
+  form{
+  	width: 100%;}
+  #text_contact{
+  	width: 100%;}
+}
+
+@media screen and (max-width: 580px){
+	#baniere img {
+    width: 100%;}
+   .logo_programme {
+    width: 100%;}
+   #newsletter p{
+   	width: 70%;}
+}
+
+@media screen and (max-width: 500px){
+	.card {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em auto;
+    align-content: center;
+    align-items: center;}
+  #les_demoiselles_gars {
+    width: 50%;
+    flex-direction: column;}
+}
+
+@media screen and (max-width: 450px){
+	#titre{
+		font-size: 0.7em;}
+	.card_article {
+    width: 100%;}
+  main.gallerie {
+    width: 80%;}
+}
+
+@media screen and (max-width: 420px){
+	.infos #bloc_hotel ul{
+		margin: 0;}
+	.infos .programme p{
+		margin-right: 10%;}
+  #programme {
+    display: none;}
+  #baniere{
+  	display: none;}
+}
+

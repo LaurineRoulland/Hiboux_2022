@@ -1,0 +1,273 @@
+@font-face {
+  font-family: "mongolian-baiti-regular";
+  src: url("../includes/monbaiti.ttf");}
+@font-face {
+  font-family: "Gabriola";
+  src: url("../includes/Gabriola.ttf");}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+/*  font-family: 'Montserrat', sans-serif;  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+/*  font-family: 'Raleway', sans-serif;  */
+
+body, header{
+	width: 100%;
+	padding: 0;
+	margin: auto;
+	background-color: #fff;
+	font-family: 'Gabriola', sans-serif;
+	color: #856666;}
+
+main{
+	width: 70%;
+	margin: auto;}
+
+p{
+	font-size: 1.5em;}
+
+h1, h2, h3{
+	font-family: "mongolian-baiti-regular", sans-serif;}
+
+
+
+
+/*  NAV  */
+
+.logo_programme{
+	width: 60%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	justify-content: center;}
+
+#logo{
+	width: 30%;
+	margin: 1.5em auto;}
+
+nav ul{
+	padding: 0;
+	margin: 0;
+  display: inline-flex;
+  list-style: none;
+  justify-content: center;}
+    
+nav{
+	width: 60%;
+	height: 4.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;}
+
+ul li{
+	padding: 1em;
+	font-size: 1.6em;}
+
+ul li a{
+	text-decoration: none; color: #856666;}
+ul li a:link{
+	color: #856666;}
+ul li a:after{
+	display: block;
+  content: '';
+  border-bottom: solid 2px #856666;
+  transform: scaleX(0);  
+  transition: transform 200ms ease-out;}
+ul li a:hover:after{
+	transform: scaleX(1);}
+
+
+
+
+/*  SECTION  */ 
+
+#titre{
+	width: 100%;
+	height: 7em;
+	background-color: rgba(133, 102, 102, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1em;}
+
+h2{
+	width: 90%;
+	text-align: center;
+	font-family: 'mongolian-baiti-regular', sans-serif;
+	font-size: 220%;
+	letter-spacing: 0.5em;
+	font-variant: small-caps;
+	font-weight: 200;
+	margin: 0;}
+
+#titre p{
+	margin: 0;
+	font-family: 'gabriola', sans-serif;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;}
+
+section{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;}
+
+h3{
+	padding: 0 1em;
+	font-variant: small-caps;
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: underline;}
+
+article p{
+	font-family: 'Gabriola', sans-serif;
+	font-size: 1.25em;
+	padding: 0 2em;}
+
+#bloc_horaires, #bloc_adresses{
+	background-color: rgba(133, 102, 102, 0.2);
+	width: 49%;
+	height: auto;}
+
+    /* Programme et horaires  */
+.programme{
+	display: flex;
+	flex-direction: row;
+	align-items: center;}
+
+.programme p {
+	padding: 0;
+	margin-right: 3em;}
+
+.programme img{
+	width: auto;
+	height: auto;
+	margin: 1em 1em 1em 3em;}	
+
+.programme span{
+	font-family: 'Raleway', sans
+	-serif;
+	line-height: 1.5;
+	font-weight: 600;}
+
+    /* Adresses mairie et domaine */  
+aside{
+	text-align: center;}
+
+.acces, .acces li{
+	font-size: 0.8em;
+	font-family: 'Raleway', sans-serif;
+	line-height: 1;}
+
+.acces li{
+	padding: 0.5em;
+	margin: 0;}
+
+iframe{
+	width: 80%;
+	height: auto;}
+
+span{
+	text-decoration: underline;}
+
+.acces{
+	font-style: initial;
+	text-align: left;}
+
+    /* Hôtels */
+#bloc_hotel{
+	background-color: rgba(133, 102, 102, 0.2);
+	width: 100%;
+	height: auto;
+	margin-bottom: 1em;}
+
+#centre{
+	text-align: center;}
+
+#bloc_hotel h3{
+	padding: 1em 1em 0 1em;}
+
+#colonnes{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: auto;}
+
+#bloc_hotel ul{
+	margin: 1em;
+	display: flex;
+	flex-direction: column;}
+
+#bloc_hotel li{
+	padding: 0.2em;
+	margin: 0.2em;}
+
+#bloc_hotel ol img{
+	margin: 0 0.6em;}
+
+#bloc_hotel ol{
+	  font-family: 'Raleway', sans-serif;
+    font-size: small;
+    margin: 0.8em 0;
+  	padding-left: 0.5em;
+  	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;}
+
+#bloc_hotel iframe{
+	width: 100%;
+	padding: 0;
+	margin: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  FOOTER  */
+
+footer{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: #856666;
+	height: 5em;}
+
+footer p{
+	color: e5d0d0;
+	margin: 0;
+	display: flex;
+	align-items: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  RESPONSIVE 
+
+
+2400 ou 1600
+ max
+logo min 22%
+
+ */
+
+

@@ -1,0 +1,117 @@
+
+@font-face {
+  font-family: "mongolian-baiti-regular";
+  src: url("../includes/monbaiti.ttf");}
+@font-face {
+  font-family: "Gabriola";
+  src: url("../includes/Gabriola.ttf");}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+/*  font-family: 'Montserrat', sans-serif;  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+/*  font-family: 'Raleway', sans-serif;  */
+
+body, header{
+	width: 100%;
+	padding: 0;
+	margin: auto;
+	background-color: #fff;
+	font-family: 'Gabriola', sans-serif;
+	color: #856666;}
+
+p{
+	font-size: 1.5em;}
+
+h1, h2, h3{
+	font-family: "mongolian-baiti-regular", sans-serif;}
+
+
+
+
+/*  NAV  */
+
+.logo_programme{
+	width: 60%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	justify-content: center;}
+
+#logo{
+	width: 30%;
+	margin: 1.5em auto;}
+
+nav ul{
+	padding: 0;
+	margin: 0;
+  display: inline-flex;
+  list-style: none;
+  justify-content: center;}
+    
+nav{
+	width: 60%;
+	height: 4.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;}
+
+ul li{
+	padding: 1em;
+	font-size: 1.6em;}
+
+ul li a{
+	text-decoration: none; color: #856666;}
+ul li a:link{
+	color: #856666;}
+ul li a:after{
+	display: block;
+  content: '';
+  border-bottom: solid 2px #856666;
+  transform: scaleX(0);  
+  transition: transform 200ms ease-out;}
+ul li a:hover:after{
+	transform: scaleX(1);}
+
+
+
+
+/*  MAIN  */
+
+main{
+	width: 30%;
+	margin: auto;}
+
+article{
+	text-align: center;
+	margin: 4em 0;
+}
+
+
+
+/*  FOOTER  */
+
+footer{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: #856666;
+	height: 5em;}
+
+footer p{
+	color: e5d0d0;
+	margin: 0;
+	display: flex;
+	align-items: center;}
+
+
+
+
+/*  RESPONSIVE 
+
+
+2400 max
+logo min 22%
+
+ */
+
+

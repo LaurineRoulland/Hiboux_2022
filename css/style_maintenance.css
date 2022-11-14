@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "mongolian-baiti-regular";
+  src: url("../includes/monbaiti.ttf");}
+@font-face {
+  font-family: "Gabriola";
+  src: url("../includes/Gabriola.ttf");}
+
+
+body{
+	background-color: #856666;
+	position: relative;
+	margin: 0;
+	height: 45.11em;}
+
+.cerisier{
+	width: 40%;
+	position: absolute;
+	bottom: 0;
+	right: 0;}
+
+#contenu{
+	width: 41em;
+    height: 42em;
+    margin: auto;
+    margin-top: 0;
+    background-image: url(../images/polygones_variables.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+h1, p{
+	padding: 0;
+	text-align: center;
+	color:  #cecece;}
+
+h1{
+	margin-bottom: 40px;
+	font-family: 'mongolian-baiti-regular', sans-serif;
+	font-variant: small-caps;
+	font-size: -webkit-xxx-large;}
+
+p{
+	margin: 0;
+	font-size: 22px;
+	font-family: 'Gabriola', sans-serif;}
+
+#deuxieme_paragraphe{
+	margin-bottom: 2em;}
+
+#polygones{
+	width: 35em;}
+
+#decompte{
+	width: 10em;
+	color: #cecece;
+	font-family: 'mongolian-baiti-regular', sans-serif;}
