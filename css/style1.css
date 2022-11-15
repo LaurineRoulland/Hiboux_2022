@@ -114,14 +114,15 @@ nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 auto;}
+	margin: 1em auto 0;}
 
 nav a.header_menu{
 	display:none;}
 
 ul li{
-	padding: 0 1em;
-	font-size: 2em;}
+	margin: 0 1em;
+	font-size: 2.35em;
+	text-align: center;}
 
 ul li a{
 	text-decoration: none; color: #856666;}
@@ -142,6 +143,7 @@ ul li a:hover:after{
 /*  BANIERE */
 
 #baniere {
+	width: 100%;
 	text-align: center;}
 
 #baniere img{
