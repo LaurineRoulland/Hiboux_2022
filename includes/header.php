@@ -18,8 +18,9 @@ global $banniere;
 
     <div class="logo_programme">
 
-        <img src="images/logo.png" alt="Logo" id="logo">
+        <!-- <img src="images/logo.png" alt="Logo" id="logo"> -->
 
+        <!-- Menu burger -->
         <nav id="mySidenav" class="sidenav">
             <a id="closeBtn" href="#" class="close">x</a>
             <ul>
@@ -33,11 +34,13 @@ global $banniere;
         <a href="#" id="openBtn" class="burger_menu">
             <img src="images/burger-bar.png" alt="menu_burger">
         </a>
+        <!-- Fin menu burger -->
 
     </div>
 
     <nav>
         <ul>
+            <li><img src="images/logo.png" alt="Logo" id="logo"></li>
             <li><a href="/index.php">Accueil</a></li>
             <li><a href="/info.php">Informations</a></li>
             <li><a href="/galerie.php">Galerie</a></li>

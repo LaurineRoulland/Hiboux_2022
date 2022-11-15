@@ -45,23 +45,23 @@ h1, h2, h3{
 	display: none;}
 
 .sidenav {
-  height: auto;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: -250px;
-  background-color: #856666;
-  padding-top: 60px;
-  padding-bottom: 2em;
-  transition: left 0.5s ease;}
+	height: auto;
+	width: 250px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: -250px;
+	background-color: #856666;
+	padding-top: 60px;
+	padding-bottom: 2em;
+	transition: left 0.5s ease;}
 
 .sidenav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;}
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;}
 
 .sidenav ul li{
 	text-align: center;
@@ -69,70 +69,71 @@ h1, h2, h3{
 	padding: 0;}
 
 .sidenav a {
-  font-size: 25px;
-  color: #e1d5d5;
-  display: block;
-  transition: 0.3s;}
+	font-size: 25px;
+	color: #e1d5d5;
+	display: block;
+	transition: 0.3s;}
 
 .sidenav.active {
-  left: 0;}
+  	left: 0;}
 
 .sidenav .close {
 	text-decoration: none;
 	font-family: 'Raleway', sans-serif;
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;}
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;}
 
 .logo_programme{
 	width: 80%;
-  height: auto;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  align-content: flex-start;
-  align-items: flex-start;}
+	height: auto;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	align-content: flex-start;
+	align-items: flex-start;}
 
 #logo{
 	width: 30%;
 	min-width: 200px;
-	max-width: 300px;
-	margin: 1.5em auto;}
+	max-width: 300px;}
 
 nav ul{
 	padding: 0;
 	margin: 0;
 	display: inline-flex;
 	list-style: none;
-	justify-content: center;}
+	justify-content: center;
+	align-items: center;}
 
 nav{
 	width: 80%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 auto;}
+	margin: 1em auto 0;}
 
 nav a.header_menu{
 	display:none;}
 
 ul li{
-	padding: 1em;
-	font-size: 1.6em;}
+	margin: 0 1em;
+	font-size: 2.35em;
+	text-align: center;}
 
 ul li a{
 	text-decoration: none; color: #856666;}
 ul li a:link{
 	color: #856666;}
 ul li a:after{
-  display: block;
-  content: '';
-  border-bottom: solid 2px #856666;
-  transform: scaleX(0);
-  transition: transform 300ms ease-out;}
+	display: block;
+	content: '';
+	border-bottom: solid 2px #856666;
+	transform: scaleX(0);
+	transition: transform 300ms ease-out;}
 ul li a:hover:after{
 	transform: scaleX(0.8);}
 
@@ -142,6 +143,7 @@ ul li a:hover:after{
 /*  BANIERE */
 
 #baniere {
+	width: 100%;
 	text-align: center;}
 
 #baniere img{
@@ -180,8 +182,8 @@ h2{
 #decompte_rebour{
 	font-style: italic;
 	font-size: 75%;
-  color: #856666;
-  flex-direction: column;}
+  	color: #856666;
+  	flex-direction: column;}
 
 #decompte{
 	font-style: normal;
@@ -190,12 +192,13 @@ h2{
 
 
 /*  LOGO et PROGRAMME */
-.logo_programme{
+
+/* .logo_programme{
 	width: 80%;
 	height: auto;
 	margin: auto;
 	display: flex;
-	justify-content: center;}
+	justify-content: center;} */
 
 #programme{
 	width: 75%;
@@ -437,14 +440,14 @@ main.contacts{
 	justify-content: center;}
 #text_contact{
 	width: 50%;
-  text-align: center;
-  display: flex;
-  justify-items: center;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
+	text-align: center;
+	display: flex;
+	justify-items: center;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
 	padding-right: 2%;}
 #Contacts form{
 	width: 50%;
@@ -686,14 +689,14 @@ footer p{
 
 @media screen and (max-width: 1080px){
 	.logo_programme {
-    width: 100%;}
-  .home section{
-  	width: 80%;}
-  main.gallerie {
-  	width: 55%;
-  	margin-bottom: 7em;}
-  .blog section{
-  	width: 80%;}
+		width: 100%;}
+ 	.home section{
+		width: 80%;}
+	main.gallerie {
+  		width: 55%;
+  		margin-bottom: 7em;}
+ 	.blog section{
+  		width: 80%;}
 }
 
 @media screen and (max-width: 950px){
@@ -709,59 +712,59 @@ footer p{
 		min-width: 50%;}
 	#baniere img{
 		width: 95%;
-		position: relative;}
+		position: relative;
 		top: 100px;}
 }
 
 @media screen and (max-width: 900px){
 	.temoins {
-    margin: 2%;}
-  .demoiselles_gars {
-    margin: 0.5em}
+    	margin: 2%;}
+ 	.demoiselles_gars {
+    	margin: 0.5em}
 }
 
 @media screen and (max-width: 850px){
 	.infos #colonnes {
-    display: flex;
-    flex-direction: column;}
-  #Contacts {
-    width: 100%;
-    padding: 1em;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;}
-  #text_contact {
-    width: 90%;
-    justify-content: center;
-    align-items: center;}
-  form {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  	padding: 0;}
-  #les_temoins{
-  	flex-wrap: wrap;}
-  .temoins img{
-  	width: 200px;}
-  main.article{
-  	width: 90%;}
-  .article article{
-  	width: 95%;}
+		display: flex;
+		flex-direction: column;}
+  	#Contacts {
+		width: 100%;
+		padding: 1em;
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-content: center;
+		align-items: center;}
+  	#text_contact {
+		width: 90%;
+		justify-content: center;
+		align-items: center;}
+	form {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 0;}
+	#les_temoins{
+		flex-wrap: wrap;}
+	.temoins img{
+		width: 200px;}
+	main.article{
+		width: 90%;}
+	.article article{
+		width: 95%;}
 }
 
 @media screen and (max-width: 750px){
 	.blog section{
 		width: 95%;}
 	#les_demoiselles_gars {
-    width: 50%;
-    flex-direction: column;}
+		width: 50%;
+		flex-direction: column;}
 }
 
 @media screen and (min-width: 700px){
@@ -773,7 +776,7 @@ footer p{
 	#mySidenav{
 		display: flex;}
 	.infos .programme{
-  	margin: 0;}
+  		margin: 0;}
 	nav{
 		display: none;}
 	nav ul{
@@ -796,22 +799,22 @@ footer p{
 	.blog .card{
 		flex-direction:  column;}
 	.card_article {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-	  margin: 1em auto;}
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	  	margin: 1em auto;}
 	.card_article .img_card{
 		height:auto;}
-  ul li a:link {
-    color: #e1d5d5;}
+	ul li a:link {
+		color: #e1d5d5;}
 	ul li a:hover{
 		color: whitesmoke;}
 	ul li a:after{
-	  display: block;
-	  content: '';
-	  border-bottom: solid 2px whitesmoke;
-	  transform: scaleX(0);
-	  transition: transform 200ms ease-out;}
+		display: block;
+		content: '';
+		border-bottom: solid 2px whitesmoke;
+		transform: scaleX(0);
+		transition: transform 200ms ease-out;}
 	ul li a:hover:after{
 		transform: scaleX(0.8);}
 }
@@ -822,30 +825,30 @@ footer p{
 	.card_article h4{
 		line-height: 0.8;}
 	.home section {
-    width: 97%;
-    margin: auto;}
-  form{
-  	width: 100%;}
-  #text_contact{
-  	width: 100%;}
+		width: 97%;
+		margin: auto;}
+	form{
+		width: 100%;}
+	#text_contact{
+		width: 100%;}
 }
 
 @media screen and (max-width: 580px){
 	#baniere img {
-    width: 100%;}
-  .logo_programme {
-    width: 100%;}
-  #newsletter p{
-   	width: 70%;}
+		width: 100%;}
+	.logo_programme {
+		width: 100%;}
+	#newsletter p{
+		width: 70%;}
 }
 
 @media screen and (max-width: 500px){
 	.card {
-    display: flex;
-    flex-direction: column;
-    margin: 1.5em auto;
-    align-content: center;
-    align-items: center;}
+		display: flex;
+		flex-direction: column;
+		margin: 1.5em auto;
+		align-content: center;
+		align-items: center;}
 }
 
 @media screen and (max-width: 450px){
@@ -856,9 +859,9 @@ footer p{
 	#titre{
 		font-size: 0.7em;}
 	.card_article {
-    width: 100%;}
-  main.gallerie {
-    width: 80%;}
+		width: 100%;}
+	main.gallerie {
+		width: 80%;}
 }
 
 @media screen and (max-width: 420px){
@@ -866,11 +869,11 @@ footer p{
 		margin: 0;}
 	.infos .programme p{
 		margin-right: 10%;}
-  #programme {
-    display: none;}
-  #baniere{
-  	display: none;}
-  main.contacts {
-    width: 85%;}
+	#programme {
+		display: none;}
+	#baniere{
+		display: none;}
+	main.contacts {
+		width: 85%;}
 }
 
