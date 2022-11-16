@@ -11,6 +11,8 @@
 /*  font-family: 'Raleway', sans-serif;  */
 
 
+
+
 *{
 	box-sizing:border-box;
 	/*margin:0;*/
@@ -39,7 +41,8 @@ h1, h2, h3{
 
 
 
-/*  NAV  */
+
+/* ___________________ NAV __________________ */
 
 #mySidenav{
 	display: none;}
@@ -140,7 +143,7 @@ ul li a:hover:after{
 
 
 
-/*  BANIERE */
+/* _________________ BANIERE ________________ */
 
 #baniere {
 	width: 100%;
@@ -152,7 +155,8 @@ ul li a:hover:after{
 
 
 
-/*  ASIDE  */
+
+/* __________________ ASIDE _________________ */
 
 .home aside{
 	width: 100%;
@@ -162,7 +166,7 @@ ul li a:hover:after{
 	padding: 0;
 	margin: auto;}
 
-/*  Date  */
+/*  _____ Date _____  */
 h2{
 	font-family: 'mongolian-baiti-regular', sans-serif;
 	font-size: 220%;
@@ -178,7 +182,7 @@ h2{
 	display: flex;
 	flex-direction: column;}
 
-/*  Compte à rebour  */
+/*  ___ Compte à rebour ___  */
 #decompte_rebour{
 	font-style: italic;
 	font-size: 75%;
@@ -191,7 +195,8 @@ h2{
 
 
 
-/*  LOGO et PROGRAMME */
+
+/* ____________ LOGO & PROGRAMME ___________ */
 
 /* .logo_programme{
 	width: 80%;
@@ -208,7 +213,7 @@ h2{
 
 
 
-/*  SECTION BLOG  */
+/* _______________ SECTION BLOG ______________ */
 
 section{
 	width: 60%;
@@ -291,7 +296,7 @@ section{
 
 
 
-/*  NEWSLETTER  */
+/* ________________ NEWSLETTER _______________ */
 
 #newsletter{
 	width: 100%;
@@ -331,7 +336,7 @@ section{
 
 
 
-/* PAGE ARTICLE  */
+/* _______________ PAGE ARTICLE ______________ */
 
 main.article{
 	width: 70%;
@@ -358,7 +363,7 @@ main.article{
 
 
 
-/* PAGE CONTACT */
+/* _______________ PAGE CONTACTS ______________ */
 
 main.contacts{
 	width: 70%;
@@ -370,7 +375,7 @@ main.contacts{
 .contacts span{
 	font-size: x-large;}
 
-/*  LES MARIES  */
+/* ____ LES MARIES ____ */
 #les_maries{
 	text-align: center;
 	margin: 3em auto;}
@@ -383,7 +388,7 @@ main.contacts{
 	margin-top: 1em;
 	line-height: 1.2;}
 
-/*  LES TEMOINS  */
+/* ____ LES TEMOINS ____ */
 #les_temoins{
 	display: flex;
 	flex-direction: row;
@@ -402,7 +407,7 @@ main.contacts{
 	line-height: 1;
 	margin-top: 0.8em;}
 
-/*  LES DEMOISELLES & GARCON D'HONNEUR  */
+/* ___ LES DEMOISELLES & GARCON D'HONNEUR ___ */
 #les_demoiselles_gars{
 	width: 75%;
 	margin: auto;
@@ -428,7 +433,8 @@ main.contacts{
 
 
 
-/*  FORMULAIRE CONTACT  */
+
+/* _____________ FORMULAIRE CONTACT ____________ */
 #Contacts{
 	width: 80%;
 	height: auto;
@@ -466,7 +472,7 @@ main.contacts{
 
 
 
-/* GALERIE */
+/* ________________ GALERIE _______________ */
 
 main.galerie{
 	width: 100%;
@@ -573,7 +579,9 @@ main.galerie section{
 
 
 
-/* PAGE INFOS */
+
+
+/* _______________ PAGE INFOS ______________ */
 
 .infos #titre{
 	width: 100%;
@@ -625,7 +633,7 @@ main.galerie section{
 	width: 49%;
 	height: auto;}
 
-/* Programme et horaires  */
+/* ___ Programme et horaires ___ */
 .infos .programme{
 	display: flex;
 	flex-direction: row;
@@ -647,7 +655,7 @@ main.galerie section{
 	line-height: 1.5;
 	font-weight: 600;}
 
-/* Adresses mairie et domaine */
+/* ___ Adresses mairie et domaine ___ */
 .infos aside{
 	text-align: center;}
 
@@ -672,7 +680,7 @@ main.galerie section{
 	text-align: left;
 	margin-right: 10%;}
 
-/* Hôtels */
+/* ____ Hôtels ____ */
 .infos #bloc_hotel{
 	background-color: rgba(133, 102, 102, 0.2);
 	width: 80%;
@@ -721,10 +729,7 @@ main.galerie section{
 
 
 
-
-
-
-/*  FOOTER  */
+/* ________________ FOOTER _______________ */
 
 footer{
 	display: flex;
@@ -744,7 +749,7 @@ footer p{
 
 
 
-/*  RESPONSIVE   */
+/* _______________ RESPONSIVE ______________ */
 
 @media screen and (max-width: 1408px){
 	#blog{
