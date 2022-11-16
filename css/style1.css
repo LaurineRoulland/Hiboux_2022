@@ -475,37 +475,82 @@ main.contacts{
 /* ________________ GALERIE _______________ */
 
 main.gallerie{
-	width: 30%;
+	width: 100%;
 	margin: auto;}
+
+main.gallerie aside{
+	background-color: rgba(133, 102, 102, 0.83);
+	padding: 1.5em;
+	color: whitesmoke;
+	text-align: center;}
+
+main.gallerie h1{
+	font-family: 'mongolian-baiti-regular', sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.65em;
+    font-variant: small-caps;
+    font-weight: 200;
+    margin: 0;}
+
+main.gallerie h2{
+    font-family: 'Gabriola', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.5;
+	font-weight: 100;
+	font-style: italic;
+	margin: 0;
+	font-variant: normal;}
 
 .gallerie article{
 	text-align: center;
 	margin: 4.5em 0;}
 
-.gallerie form{
-	padding: 10px;
-    background-color: lightgrey;
-}
+.gallerie article img{
+	margin-bottom: 2em;}
 
-.gallerie form h2{
-	margin-bottom: 20px;
-}
+.gallerie form{
+	width: 45%;
+	margin: auto;
+	padding: 1.5em;
+    background-color: rgb(231, 224, 224);}
+
+.gallerie form h3{
+	font-family: 'Gabriola', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.5;
+    font-weight: 100;
+    font-style: italic;
+    margin: 0;}
+
 .gallerie input, .gallerie label{
 	display: inline-block;
     width: 100%;
-    margin: 10px auto;
-	padding:5px;
-}
+    margin: 1em auto;
+	padding: 0.5em;
+	border: none;
+	font-family: 'mongolian-baiti-regular', sans-serif;
+	color: #856666;}
 
-.gallerie input::placeholder {  
-	text-align: center; 
-}
+.gallerie .shadows, form{
+	box-shadow: 6px 6px 15px rgb(133 102 102 / 50%);
+	background-color: whitesmoke;
+	font-size: large;}
+
+.gallerie input::placeholder{  
+	text-align: center;
+	font-family: 'mongolian-baiti-regular', sans-serif;
+	font-size: large;}
+
+#pictures{
+	width: 80%;
+	margin: auto;}
 
 .gallerie .photos img{
 	max-width: 47%;
     margin: 1px;
-    max-height: 100%;
-}
+    max-height: 100%;}
+
+
 
 
 
