@@ -30,39 +30,42 @@ $pictures_list = array_diff(scandir($directory), array('..', '.'));;
 require_once ("includes/header.php"); ?>
 
         <main class="gallerie">
-            <article>
-                <img src="images/photo.png" alt="icone appareil photo">
-                <p>Bienvenue dans la galerie photos !</p>
 
-                <p>Ca y est, l'événement est passé et vous allez pouvoir désormais partager tous vos trésors photographiques !</p>
-                <p>Pour cela, rien de plus simple. Envoyez vos photos à Morgane & Alex par WhatsApp ou mail <br>
-                    (roulland.morgane@gmail.com ou alexandre.bellettre@gmail.com)</p>
-                <p>Ou complétez le formulaire ci-dessous pour ajouter vos photos à la galerie en direct !</p>
+            <aside>
+                <h1>Bienvenue</h1>
+                <h2>dans la galerie photos !</h2>
+            </aside>
 
-                <p><a href="https://josepho.io/g/s/63344/f376c6ff4a39c8585c62c4b2e4c8c27a" target="_blank">Voir la galerie du Photobooth</a> </p>
+            <section>
+                <article>
+                    <img src="images/photo.png" alt="icone appareil photo">
+                    <p>Ca y est, l'événement est passé et vous allez pouvoir désormais partager tous vos trésors photographiques !</p>
+                    <p>Pour cela, rien de plus simple. Envoyez vos photos à Morgane & Alex par WhatsApp ou mail <br>
+                        (roulland.morgane@gmail.com ou alexandre.bellettre@gmail.com)</p>
+                    <p>Ou complétez le formulaire ci-dessous pour ajouter vos photos à la galerie en direct !</p>
+                    <p><a href="https://josepho.io/g/s/63344/f376c6ff4a39c8585c62c4b2e4c8c27a" target="_blank">Voir la galerie du Photobooth</a> </p>
+                    <p>Pour les photos de groupe ainsi que toutes celles du photographe, nous vous donnerons plus de détails à partir de fin Octobre.</p>
+                </article>
 
-                <p>Pour les photos de groupe ainsi que toutes celles du photographe, nous vous donnerons plus de détails à partir de fin Octobre.</p>
+                <article>
+                    <form method="post" action="" name="upload" enctype="multipart/form-data">
+                        <h3>Postez !</h3>
+                        <input type="text" name="author" placeholder="Qui êtes vous ?" class="shadows">
+                        <input type="file" name="pictures[]" id="pictures" accept="image/jpeg,image/png" multiple>
+                        <input type="submit" value="Envoyer" class="shadows">
+                    </form>
+                </article>
 
-            </article>
-
-            <article>
-                
-                <form method="post" action="" name="upload" enctype="multipart/form-data">
-                    <h2>Postez !</h2>
-                    <input type="text" name="author" placeholder="Qui êtes vous ?">
-                    <input type="file" name="pictures[]" id="pictures" accept="image/jpeg,image/png" multiple>
-                    <input type="submit" value="Envoyer">
-                </form>
-            </article>
-
-            <article class="photos">
-                <?php
-                if(!empty($pictures_list)){
-                    foreach($pictures_list as $picture){
-                        echo '<a href="'.$directory.$picture.'" target="_blank"><img src="'.$directory.$picture.'"></a>';
+                <article class="photos">
+                    <?php
+                    if(!empty($pictures_list)){
+                        foreach($pictures_list as $picture){
+                            echo '<a href="'.$directory.$picture.'" target="_blank"><img src="'.$directory.$picture.'"></a>';
+                        }
                     }
-                }
-                ?>
-            </article>
+                    ?>
+                </article>
+            </section>
+            
         </main>
 <?php require_once("includes/footer.php"); ?>
