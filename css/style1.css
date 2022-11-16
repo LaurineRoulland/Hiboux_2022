@@ -466,19 +466,19 @@ main.contacts{
 
 
 
-/* GALLERIE */
+/* GALERIE */
 
-main.gallerie{
+main.galerie{
 	width: 100%;
 	margin: auto;}
 
-main.gallerie aside{
+main.galerie aside{
 	background-color: rgba(133, 102, 102, 0.83);
 	padding: 1.5em;
 	color: whitesmoke;
 	text-align: center;}
 
-main.gallerie h1{
+main.galerie h1{
 	font-family: 'mongolian-baiti-regular', sans-serif;
     font-size: 3em;
     letter-spacing: 0.65em;
@@ -486,7 +486,7 @@ main.gallerie h1{
     font-weight: 200;
     margin: 0;}
 
-main.gallerie h2{
+main.galerie h2{
     font-family: 'Gabriola', sans-serif;
     font-size: 2em;
     letter-spacing: 0.5;
@@ -495,20 +495,24 @@ main.gallerie h2{
 	margin: 0;
 	font-variant: normal;}
 
-.gallerie article{
+main.galerie section{
+	width: 90%;
+	margin: auto;}
+
+.galerie article{
 	text-align: center;
 	margin: 4.5em 0;}
 
-.gallerie article img{
+.galerie article img{
 	margin-bottom: 2em;}
 
-.gallerie form{
-	width: 45%;
+.galerie form{
+	width: 40%;
 	margin: auto;
 	padding: 1.5em;
     background-color: rgb(231, 224, 224);}
 
-.gallerie form h3{
+.galerie form h3{
 	font-family: 'Gabriola', sans-serif;
     font-size: 2em;
     letter-spacing: 0.5;
@@ -516,7 +520,7 @@ main.gallerie h2{
     font-style: italic;
     margin: 0;}
 
-.gallerie input, .gallerie label{
+.galerie input, .galerie label{
 	display: inline-block;
     width: 100%;
     margin: 1em auto;
@@ -525,25 +529,45 @@ main.gallerie h2{
 	font-family: 'mongolian-baiti-regular', sans-serif;
 	color: #856666;}
 
-.gallerie .shadows, form{
+#pictures{
+	width: 50%;
+	margin: auto;
+	text-align: center;}
+
+.envoyer, #pictures, button{
+	cursor: pointer;
+}
+.galerie .shadows, form{
 	box-shadow: 6px 6px 15px rgb(133 102 102 / 50%);
 	background-color: whitesmoke;
 	font-size: large;}
 
-.gallerie input::placeholder{  
+.galerie input::placeholder{  
 	text-align: center;
 	font-family: 'mongolian-baiti-regular', sans-serif;
 	font-size: large;}
 
-#pictures{
-	width: 80%;
-	margin: auto;}
-
-.gallerie .photos img{
+.galerie .photos img{
 	max-width: 47%;
     margin: 1em;
     max-height: 100%;}
 
+.galerie a{
+	font-size: 40;
+	font-family: 'mongolian-baiti-regular', sans-serif;
+	font-variant: small-caps;
+	color: #856666;
+	text-decoration: none;}
+
+.galerie a:hover{
+	font-weight: bold;}
+
+.photos{
+	width: 100%;
+}
+.photos a{
+	width: 20em;
+}
 
 
 
@@ -737,7 +761,7 @@ footer p{
 		width: 100%;}
  	.home section{
 		width: 80%;}
-	main.gallerie {
+	main.galerie {
   		width: 55%;
   		margin-bottom: 7em;}
  	.blog section{
@@ -905,7 +929,7 @@ footer p{
 		font-size: 0.7em;}
 	.card_article {
 		width: 100%;}
-	main.gallerie {
+	main.galerie {
 		width: 80%;}
 }
 
