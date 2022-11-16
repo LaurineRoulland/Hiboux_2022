@@ -37,6 +37,7 @@ require_once ("includes/header.php"); ?>
             </aside>
 
             <section>
+
                 <article>
                     <img src="images/photo.png" alt="icone appareil photo">
                     <p>Ca y est, l'événement est passé et vous allez pouvoir désormais partager tous vos trésors photographiques !</p>
@@ -65,6 +66,7 @@ require_once ("includes/header.php"); ?>
                     }
                     ?>
                 </article>
+                
             </section>
             
         </main>
