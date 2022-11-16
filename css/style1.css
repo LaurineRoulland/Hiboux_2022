@@ -534,9 +534,12 @@ main.galerie section{
 	margin: auto;
 	text-align: center;}
 
+.formulaire button{
+	margin: 0.8em 0;}
+
 .envoyer, #pictures, button{
-	cursor: pointer;
-}
+	cursor: pointer;}
+
 .galerie .shadows, form{
 	box-shadow: 6px 6px 15px rgb(133 102 102 / 50%);
 	background-color: whitesmoke;
@@ -547,27 +550,26 @@ main.galerie section{
 	font-family: 'mongolian-baiti-regular', sans-serif;
 	font-size: large;}
 
+.galerie .photos{
+	width: 100%;
+	margin: 1em;}
+
 .galerie .photos img{
-	max-width: 47%;
+	max-width: 30%;
     margin: 1em;
     max-height: 100%;}
 
-.galerie a{
-	font-size: 40;
+.galerie .photos a{
+	font-size: 1em;
 	font-family: 'mongolian-baiti-regular', sans-serif;
 	font-variant: small-caps;
 	color: #856666;
-	text-decoration: none;}
+	text-decoration: none;
+	margin: 0.5em;}
 
 .galerie a:hover{
 	font-weight: bold;}
 
-.photos{
-	width: 100%;
-}
-.photos a{
-	width: 20em;
-}
 
 
 
