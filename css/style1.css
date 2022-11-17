@@ -112,7 +112,7 @@ h1, h2, h3{
 
 @keyframes fadeinlogo {
 	0% {transform: translateY(-50px);}
-	100% {transform: translateY(0px); opacity: 1;}
+	100% {transform: translateY(-20px); opacity: 1;}
 }
 
 nav ul{
@@ -227,17 +227,26 @@ h2{
 
 /* ____________ LOGO & PROGRAMME ___________ */
 
-/* .logo_programme{
+.logo_programme{
 	width: 80%;
 	height: auto;
 	margin: auto;
 	display: flex;
-	justify-content: center;} */
+	justify-content: center;
+	animation: translate_right 1500ms forwards ease-in-out;}
 
 #programme{
 	width: 75%;
 	margin-bottom: 1em;
-	max-width: 900px;}
+	max-width: 900px;
+	animation-delay: 2s;}
+
+@keyframes translate_right{
+	0% {transform: scale(0);}
+	60% {transform: scale(1.1);}
+	75% {transform: scale(0.95);}
+	100% {transform: scale(1);}
+}
 
 
 
