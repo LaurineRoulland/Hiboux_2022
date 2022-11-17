@@ -100,9 +100,20 @@ h1, h2, h3{
 	align-items: flex-start;}
 
 #logo{
-	width: 30%;
+	width: 80%;
 	min-width: 200px;
-	max-width: 300px;}
+	max-width: 300px;
+	margin: 0.5em 0;
+	animation: fadeinlogo 1500ms forwards ease-in-out;
+	opacity: 0;}
+
+.fadein0{
+	animation-delay: 200ms;}
+
+@keyframes fadeinlogo {
+	0% {transform: translateY(-50px);}
+	100% {transform: translateY(-20px); opacity: 1;}
+}
 
 nav ul{
 	padding: 0;
@@ -125,7 +136,25 @@ nav a.header_menu{
 ul li{
 	margin: 0 1em;
 	font-size: 2.35em;
-	text-align: center;}
+	text-align: center;
+	animation: fadein 800ms forwards ease-in-out;
+	opacity: 0;}
+
+.fadein1{
+	animation-delay: 300ms;}
+.fadein2{
+	animation-delay: 400ms;}
+.fadein3{
+	animation-delay: 500ms;}
+.fadein4{
+	animation-delay: 600ms;}
+.fadein5{
+	animation-delay: 700ms;}
+
+@keyframes fadein{
+	0% {transform: translateY(20px);}
+	100% {transform: translateY(0px); opacity: 1;}
+}
 
 ul li a{
 	text-decoration: none; color: #856666;}
@@ -198,17 +227,26 @@ h2{
 
 /* ____________ LOGO & PROGRAMME ___________ */
 
-/* .logo_programme{
+.logo_programme{
 	width: 80%;
 	height: auto;
 	margin: auto;
 	display: flex;
-	justify-content: center;} */
+	justify-content: center;
+	animation: translate_right 1500ms forwards ease-in-out;}
 
 #programme{
 	width: 75%;
 	margin-bottom: 1em;
-	max-width: 900px;}
+	max-width: 900px;
+	animation-delay: 2s;}
+
+@keyframes translate_right{
+	0% {transform: scale(0);}
+	60% {transform: scale(1.1);}
+	75% {transform: scale(0.95);}
+	100% {transform: scale(1);}
+}
 
 
 
@@ -259,10 +297,18 @@ section{
 	width: 33%;
 	display: flex;
 	flex-direction: column;
-	margin: 0.3em 0;}
+	margin: 0.3em 0;
+	text-align: center;
+	background-color: transparent;
+	transition: background-color 1s;
+	opacity: 0.8;}
 
-.card_article{
-	text-align: center;}
+.card_article:hover{
+	cursor: pointer;
+	background-color: rgba(194, 178, 178, 0.15);
+	transition: background-color 1s;
+	opacity: 1;
+	border-radius: 5%;}
 
 .card_article h4{
 	font-family: 'Gabriola', sans-serif;
@@ -275,6 +321,7 @@ section{
 	line-height: 1.2;
 	font-size: 85%;
 	margin: 0 0 1.8em 0;
+	padding: 0 2%;
 	font-family: 'Raleway', sans-serif;
 	color: rgba(133, 102, 102, 0.4);}
 
