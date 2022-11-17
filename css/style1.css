@@ -100,9 +100,20 @@ h1, h2, h3{
 	align-items: flex-start;}
 
 #logo{
-	width: 30%;
+	width: 80%;
 	min-width: 200px;
-	max-width: 300px;}
+	max-width: 300px;
+	margin: 0.5em 0;
+	animation: fadeinlogo 1500ms forwards ease-in-out;
+	opacity: 0;}
+
+.fadein0{
+	animation-delay: 200ms;}
+
+@keyframes fadeinlogo {
+	0% {transform: translateY(-50px);}
+	100% {transform: translateY(0px); opacity: 1;}
+}
 
 nav ul{
 	padding: 0;
@@ -125,7 +136,25 @@ nav a.header_menu{
 ul li{
 	margin: 0 1em;
 	font-size: 2.35em;
-	text-align: center;}
+	text-align: center;
+	animation: fadein 800ms forwards ease-in-out;
+	opacity: 0;}
+
+.fadein1{
+	animation-delay: 300ms;}
+.fadein2{
+	animation-delay: 400ms;}
+.fadein3{
+	animation-delay: 500ms;}
+.fadein4{
+	animation-delay: 600ms;}
+.fadein5{
+	animation-delay: 700ms;}
+
+@keyframes fadein{
+	0% {transform: translateY(20px);}
+	100% {transform: translateY(0px); opacity: 1;}
+}
 
 ul li a{
 	text-decoration: none; color: #856666;}
