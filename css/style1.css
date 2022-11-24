@@ -113,6 +113,7 @@ h1, h2, h3{
 @keyframes fadeinlogo{
 	0% {transform: translateY(-40px);}
 	100% {transform: translateY(0px); opacity: 1;}
+}
 
 nav ul{
 	padding: 0;
@@ -247,6 +248,11 @@ h2{
 	100% {transform: scale(1);}
 }
 
+@keyframes scaleprog{
+	0% {transform: scale(0.2);}
+	70% {transform: scale(1.2);}
+	100% {transform: scale(1); opacity: 1;}
+}
 
 
 
