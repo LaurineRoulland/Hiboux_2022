@@ -575,6 +575,24 @@ main.galerie section{
 .envoyer, #pictures, button{
 	cursor: pointer;}
 
+.galerie button{
+	padding: 1em;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: rgba(133, 102, 102, 0.8);
+	border: none;
+	color: whitesmoke;}
+
+.galerie button:hover{
+	background-color: rgba(133, 102, 102, 1);
+	animation: fadeinbutton 1000ms ease-out;
+	animation-iteration-count: infinite;}
+
+@keyframes fadeinbutton {
+	0%{transform: scale(1);}
+	50%{transform: scale(1.05);}
+	100%{transform: scale(1);}	
+}
+
 .galerie .shadows, form{
 	box-shadow: 6px 6px 15px rgb(133 102 102 / 50%);
 	background-color: whitesmoke;
@@ -586,7 +604,7 @@ main.galerie section{
 	font-size: large;}
 
 .galerie .shadows:hover{
-	background-color: rgba(133, 102, 102, 0.2);
+	background-color: rgba(133, 102, 102, 0.15);
 	animation: fadeininput 1000ms ease-out;}
 
 @keyframes fadeininput{
@@ -602,6 +620,15 @@ main.galerie section{
 	max-width: 30%;
     margin: 1em;
     max-height: 100%;}
+
+.galerie .photos img:hover{
+	animation: fadeinimg 450ms ease-out;
+	animation-fill-mode: forwards;}
+
+@keyframes fadeinimg{
+	0% {opacity: 0.7;}
+	100% {opacity: 1; transform: scale(1.07);}
+}
 
 .galerie .photos a{
 	font-size: 1em;
