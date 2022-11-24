@@ -38,7 +38,7 @@ global $banniere;
 
     <nav>
         <ul>
-            <li><img src="images/logo.png" alt="Logo" id="logo"></li>
+            <li><img src="images/logo.png" alt="Logo" id="logo" class="fadein0"></li>
             <li><a href="/index.php">Accueil</a></li>
             <li><a href="/info.php">Informations</a></li>
             <li><a href="/galerie.php">Galerie</a></li>
