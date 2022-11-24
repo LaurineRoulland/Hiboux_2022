@@ -18,8 +18,6 @@ global $banniere;
 
     <div class="logo_programme">
 
-        <!-- <img src="images/logo.png" alt="Logo" id="logo"> -->
-
         <!-- Menu burger -->
         <nav id="mySidenav" class="sidenav">
             <a id="closeBtn" href="#" class="close">x</a>

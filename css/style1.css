@@ -108,12 +108,11 @@ h1, h2, h3{
 	opacity: 0;}
 
 .fadein0{
-	animation-delay: 200ms;}
+	animation-delay: 100ms;}
 
-@keyframes fadeinlogo {
-	0% {transform: translateY(-50px);}
-	100% {transform: translateY(-20px); opacity: 1;}
-}
+@keyframes fadeinlogo{
+	0% {transform: translateY(-40px);}
+	100% {transform: translateY(0px); opacity: 1;}
 
 nav ul{
 	padding: 0;
@@ -141,15 +140,15 @@ ul li{
 	opacity: 0;}
 
 .fadein1{
-	animation-delay: 300ms;}
+	animation-delay: 350ms;}
 .fadein2{
-	animation-delay: 400ms;}
-.fadein3{
 	animation-delay: 500ms;}
-.fadein4{
+.fadein3{
 	animation-delay: 600ms;}
-.fadein5{
+.fadein4{
 	animation-delay: 700ms;}
+.fadein5{
+	animation-delay: 800ms;}
 
 @keyframes fadein{
 	0% {transform: translateY(20px);}
@@ -553,8 +552,9 @@ main.galerie section{
 	margin: auto;}
 
 .galerie article{
+	width: 75%;
 	text-align: center;
-	margin: 4.5em 0;}
+	margin: 4.5em auto;}
 
 .galerie article img{
 	margin-bottom: 2em;}
@@ -593,6 +593,24 @@ main.galerie section{
 .envoyer, #pictures, button{
 	cursor: pointer;}
 
+.galerie button{
+	padding: 1em;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: rgba(133, 102, 102, 0.8);
+	border: none;
+	color: whitesmoke;}
+
+.galerie button:hover{
+	background-color: rgba(133, 102, 102, 1);
+	animation: fadeinbutton 1000ms ease-out;
+	animation-iteration-count: infinite;}
+
+@keyframes fadeinbutton {
+	0%{transform: scale(1);}
+	50%{transform: scale(1.05);}
+	100%{transform: scale(1);}	
+}
+
 .galerie .shadows, form{
 	box-shadow: 6px 6px 15px rgb(133 102 102 / 50%);
 	background-color: whitesmoke;
@@ -603,6 +621,15 @@ main.galerie section{
 	font-family: 'mongolian-baiti-regular', sans-serif;
 	font-size: large;}
 
+.galerie .shadows:hover{
+	background-color: rgba(133, 102, 102, 0.15);
+	animation: fadeininput 1000ms ease-out;}
+
+@keyframes fadeininput{
+	0% {opacity: 0.5;}
+	100% {opacity: 1;}
+}
+
 .galerie .photos{
 	width: 100%;
 	margin: 1em;}
@@ -611,6 +638,15 @@ main.galerie section{
 	max-width: 30%;
     margin: 1em;
     max-height: 100%;}
+
+.galerie .photos img:hover{
+	animation: fadeinimg 450ms ease-out;
+	animation-fill-mode: forwards;}
+
+@keyframes fadeinimg{
+	0% {opacity: 0.7;}
+	100% {opacity: 1; transform: scale(1.07);}
+}
 
 .galerie .photos a{
 	font-size: 1em;
