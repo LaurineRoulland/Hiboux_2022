@@ -348,7 +348,7 @@ section{
 #newsletter{
 	width: 100%;
 	height: auto;
-	padding: 1em 0;
+	padding: 0 0 2em 0;
 	background-color: rgba(133, 102, 102, 0.2);
 	display: flex;
 	flex-direction: column;
@@ -356,25 +356,53 @@ section{
 
 #newsletter p{
 	width: 40%;
-	margin: auto;
+	margin: 1em auto;
 	text-align: center;
-	line-height: 1;}
+	line-height: 1.5;}
 
 #newsletter .email{
-	width: 10em;
+	width: 20em;
 	height: auto;
-	padding: 5px;
+	padding: 0.75em;
+	margin: auto;
 	color: #e5d0d0;
 	background-color: #856666;
 	text-align: center;
 	font-size: larger;
 	text-decoration: none;
-	margin: auto;}
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	box-shadow: 6px 6px 15px rgb(90 54 54);}
+
+#case_email{
+	width: 60%;
+	margin: 0.5em;
+	padding: 0.5em;
+	text-align: center;
+	border: none;
+	box-shadow: 6px 6px 15px rgb(90 54 54);
+	background-color: rgb(231, 224, 224);}
 
 .envoyer{
-	font-family: 'Raleway', sans-serif;
-	padding: 3px 5px;
-	margin: 10px;}
+	width: 60%;
+	font-family: 'mongolian-baiti-regular', sans-serif;
+	font-size: large;
+	margin: 0.5em;
+	padding: 0.5em;
+	background-color: rgb(231, 224, 224);
+	border: none;
+	color: rgba(133, 102, 102, 0.7);
+	box-shadow: 6px 6px 15px rgb(90 54 54);}
+
+.envoyer:hover{
+	color: rgb(133, 102, 102);
+	animation: scaleenvoyer 50ms ease-in-out forwards;}
+
+	@keyframes scaleenvoyer{
+		0% {transform: scale(1);}
+		100% {transform: scale(1.04);}
+	}
 
 .email{
 	padding: 5px;
@@ -397,7 +425,6 @@ main.article{
 .article article{
 	width: 70%;
 	margin: 2em auto;}
-
 
 .article h1{
 	font-variant: small-caps;
