@@ -39,11 +39,11 @@ global $banniere;
     <nav>
         <ul>
             <li><img src="images/logo.png" alt="Logo" id="logo" class="fadein0"></li>
-            <li><a href="/index.php">Accueil</a></li>
-            <li><a href="/info.php">Informations</a></li>
-            <li><a href="/galerie.php">Galerie</a></li>
-            <li><a href="/blog.php">Blog</a></li>
-            <li><a href="/contacts.php">Contacts</a></li>
+            <li class="fadein1"><a href="/index.php">Accueil</a></li>
+            <li class="fadein2"><a href="/info.php">Informations</a></li>
+            <li class="fadein3"><a href="/galerie.php">Galerie</a></li>
+            <li class="fadein4"><a href="/blog.php">Blog</a></li>
+            <li class="fadein5"><a href="/contacts.php">Contacts</a></li>
         </ul>
     </nav>
         

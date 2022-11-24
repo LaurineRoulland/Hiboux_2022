@@ -107,10 +107,10 @@ h1, h2, h3{
 	opacity: 0;}
 
 .fadein0{
-	animation-delay: 200ms;}
+	animation-delay: 100ms;}
 
 @keyframes fadeinlogo{
-	0% {transform: translateY(-20px);}
+	0% {transform: translateY(-40px);}
 	100% {transform: translateY(0px); opacity: 1;}
 }
 
@@ -135,7 +135,25 @@ nav a.header_menu{
 ul li{
 	margin: 0 1em;
 	font-size: 2.35em;
-	text-align: center;}
+	text-align: center;
+	animation: fadein 800ms forwards ease-in-out;
+	opacity: 0;}
+
+.fadein1{
+	animation-delay: 350ms;}
+.fadein2{
+	animation-delay: 500ms;}
+.fadein3{
+	animation-delay: 600ms;}
+.fadein4{
+	animation-delay: 700ms;}
+.fadein5{
+	animation-delay: 800ms;}
+
+@keyframes fadein{
+	0% {transform: translateY(20px);}
+	100% {transform: translateY(0px); opacity: 1;}
+}
 
 ul li a{
 	text-decoration: none; color: #856666;}
@@ -516,8 +534,9 @@ main.galerie section{
 	margin: auto;}
 
 .galerie article{
+	width: 75%;
 	text-align: center;
-	margin: 4.5em 0;}
+	margin: 4.5em auto;}
 
 .galerie article img{
 	margin-bottom: 2em;}
@@ -565,6 +584,15 @@ main.galerie section{
 	text-align: center;
 	font-family: 'mongolian-baiti-regular', sans-serif;
 	font-size: large;}
+
+.galerie .shadows:hover{
+	background-color: rgba(133, 102, 102, 0.2);
+	animation: fadeininput 1000ms ease-out;}
+
+@keyframes fadeininput{
+	0% {opacity: 0.5;}
+	100% {opacity: 1;}
+}
 
 .galerie .photos{
 	width: 100%;
