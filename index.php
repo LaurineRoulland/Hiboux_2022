@@ -116,14 +116,16 @@ require_once('includes/header.php');
             </section>
 
             <div id="newsletter">
-                <p>Vous souhaitez être au courant des dernières nouveautés ? <br>Inscrivez vous à la newsletter !</p>
+                <p>Vous souhaitez être au courant des dernières nouveautés ? <br>Abonnez-vous à la newsletter !</p>
                 <form action="/" method="POST" class="email">
                     <label>Entrez votre adresse mail</label>
-                    <input type="email" name="user_email" placeholder="monadresse@mail.com">
+                    <input type="email" name="user_email" placeholder="Mon-adresse@mail.com" id="case_email">
                     <input type="submit" value="Envoyer" class="envoyer">
                 </form>
                 <?php if(!empty($newsletter_msg)) echo "<p>$newsletter_msg</p>"; ?>
-            </div>
+            </div>          
+            
+
 
         </main>
 <?php
